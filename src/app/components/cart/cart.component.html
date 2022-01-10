@@ -1,0 +1,9 @@
+<div class="card card-cart mt-5">
+    <div class="card-body">
+      <h5 class="card-title">Cart</h5>
+      <ul class="list-group">
+          <li  class="list-group-item mb-3" *ngFor="let item of cartItems">{{ item.product }} {{ item.price | currency }}</li>
+      </ul>
+    </div>
+    <span>Total: {{ totalPayment }}</span>
+  </div>
